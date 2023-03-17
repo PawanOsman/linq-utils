@@ -1,6 +1,6 @@
 {
 	"name": "linq-utils",
-	"version": "1.0.1",
+	"version": "1.1.1",
 	"description": "A lightweight and easy-to-use library that provides LINQ-like query capabilities for JavaScript arrays.",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
