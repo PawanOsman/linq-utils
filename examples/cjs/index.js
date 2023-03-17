@@ -1,5 +1,4 @@
-import Linq from "../dist/index.js";
-
+const Linq = require('../../dist/index.js').default;
 let numbers = [1, 2, 3, 4, 5];
 
 let linq = new Linq(numbers);

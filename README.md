@@ -10,13 +10,17 @@
 
 A lightweight implementation of LINQ-style operations for JavaScript/TypeScript with support for common array manipulations and data transformations.
 
+## Support
+ECMAScript Modules (ESM)
+CommonJS (Node.js)
 ## Installation
 
 ```bash
 npm install --save linq-utils
 ``` 
 
-## Usage
+## Usage (ESM)
+
 ```ts
 import Linq from 'linq-utils';
 
@@ -28,6 +32,22 @@ const result = linq
     .Where(x => x % 2 === 0)
     .Select(x => x * 2)
     .ToArray();
+
+console.log(result); // [4, 8]
+```
+
+## Usage (CommonJS)
+
+```js
+const Linq = require('linq-utils').default;
+let numbers = [1, 2, 3, 4, 5];
+
+let linq = new Linq(numbers);
+
+let result = linq
+  .Where(x => x % 2 === 0)
+  .Select(x => x * 2)
+  .ToArray();
 
 console.log(result); // [4, 8]
 ```
